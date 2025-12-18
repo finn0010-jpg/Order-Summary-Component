@@ -103,10 +103,14 @@ a {
     font-size: var(--fs-p);
 }
 
-.pay {
+.payment {
     display: flex;
-    justify-self: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.pay {
     width: 90%;
     background-color: var(--blue-700);
     color: white;
@@ -119,9 +123,6 @@ a {
 }
 
 .cancel {
-    display: flex;
-    justify-self: center;
-    justify-content: center;
     padding: 1rem;
     width: 90%;
     border-radius: 10px;
