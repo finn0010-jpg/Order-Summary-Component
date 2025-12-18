@@ -102,6 +102,26 @@ a {
     display: flex;
     margin-left: auto;
     font-size: var(--fs-p);
+    color: hsl(275, 50%, 50%);
+}
+
+a:hover {
+    text-decoration: none;
+    color: hsl(315, 50%, 50%);
+    transition: 0.3s ease;
+}
+
+.pay:hover {
+    background-color: hsl(275, 50%, 55%);
+    filter: brightness(120%);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cancel:hover {
+    color: var(--blue-950);
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .payment {
@@ -134,4 +154,22 @@ a {
     font-weight: var(--fw-700);
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("/images/pattern-background-desktop.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: var(--blue-100);
+    }
+
+    .container {
+        max-width: 425px;
+    }
+
+    .cancel, .pay, .price {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
 }
